@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Untitled Document</title>
+<!-- Bootstrap -->
+<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+<link href="css/styleBienvenida.css" rel="stylesheet">
+</head>
+<body>
+	<div id="app">
+<!-- body code goes here -->
+<nav class="navbar navbar-light" style="background-color:#072246"> <span class="navbar-brand mb-0 h1" style="color: white">Bankindra</span> </nav>
+<h1>Tabla de contenido</h1>
+		<div clas="form-group">
+			<div class="row">
+			<div class="col">
+			<label>Nombre: </label>
+			<input type="text" class="form-control" v-model="filterFieldNombre"></input>
+			</div>
+			<div class="col">
+		<label>Color: </label>
+			<input type="text" class="form-control" v-model="filterFieldColor"></input>
+		</div>
+	</div>
+		</div>
+<div  class="form-group">
+  <table class="table table-striped">
+    <tr>
+      <th>Id</th>
+      <th>Nombre</th>
+      <th>Color</th>
+    </tr>
+    <tr v-if="filterNombre(fruit)" v-for="fruit in fruits">
+      <td>{{fruit.id}}</td>
+      <td>{{fruit.name}}</td>
+      <td>{{fruit.color}}</td>
+    </tr>
+  </table>
+</div>
+	</div>
+
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+<script type="application/javascript" src="js/operation2.js"></script> 
+	
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+<script src="js/jquery-3.4.1.min.js"></script> 
+
+<!-- Include all compiled plugins (below), or include individual files as needed --> 
+<script src="js/popper.min.js"></script> 
+<script src="js/bootstrap-4.4.1.js"></script>
+</body>
+</html>

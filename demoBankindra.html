@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Untitled Document</title>
+    <!-- Bootstrap -->
+	<link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+	  <link href="css/style.css" rel="stylesheet">
+	<script src="https://kit.fontawesome.com/b5ab5f9a5e.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+  	<!-- body code goes here -->
+<div id="app">
+	<nav class="navbar navbar-light" style="background-color:#072246">
+  <span class="navbar-brand mb-0 h1" style="color: white">Bankindra</span>
+</nav>
+  <div class="container-sm"  >
+    <form @submit="valida">
+		<div class="modal-body text-center ">
+		<div class="col-md-7 " id="boxIngreso">
+      <div class="form-group row " >
+        <div class="col col-sm-6">
+          <h2 id="texUser">User <i class="fas fa-user"></i></h2>
+        </div>
+        <div class="col col-sm-6">
+			<input type="text" class="form-control" id="inputUser" placeholder="Username" v-model="user.user" required>
+        </div>
+      </div>
+      <div class="form-group row ">
+        <div class="col col-sm-6">
+          <h2 id="textPassword">Password <i class="fas fa-unlock"></i></h2>
+        </div>
+        <div class="col col-sm-6">
+			<input type="password" class="form-control" id="inputPassword" placeholder="Password" v-model.number="user.password" required>
+        </div>
+      </div>
+      <div clas="row-sm" id="buttonSubmit">
+        <button value="Ingresar" type="submit" class="btn btn-outline-primary btn-md btn-block">Ingresar</button>
+      </div>
+    </form>
+		</div>
+		</div>
+  </div>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script> 
+<script type="application/javascript" src="js/operation.js"></script> 
+	  
+	  
+	  
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) --> 
+	<script src="js/jquery-3.4.1.min.js"></script>
+
+	<!-- Include all compiled plugins (below), or include individual files as needed -->
+	<script src="js/popper.min.js"></script> 
+	<script src="js/bootstrap-4.4.1.js"></script>
+  </body>
+</html>
